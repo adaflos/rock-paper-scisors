@@ -4,49 +4,54 @@ print("----------")
 print("Welcome To Rock, Paper, Scissors!")
 print("----------")
 
-print("Select one of three!")
-print("----------")
+answer="y"
 
-print("1. Rock\n2. Paper\n3. Scissors")
-print("----------")
+while answer=="Y" or answer=="y":
+    print("Select one of three!")
+    print("----------")
 
-a=int(input())
-print("----------")
+    print("1. Rock\n2. Paper\n3. Scissors")
+    print("----------")
 
-print("Choosing...")
-print("----------")
+    a=int(input())
+    print("----------")
 
-b=randint(1,3)
+    print("Choosing...")
+    print("----------")
 
-if a==1:
-    if b==1:
-        print("Rock!\n\n")
-        print("It's a Tie!")
-    elif b==3:
-        print("Paper!\n\n")
-        print("You Won!")
-    elif b==2:
-        print("Scissors!\n\n")
-        print("You Lost!")
-elif a==2:
-    if b==2:
-        print("Paper!\n\n")
-        print("It's a Tie!")
-    elif b==1:
-        print("Rock!\n\n")
-        print("You Won!")
-    elif b==3:
-        print("Scissors!\n\n")
-        print("You Lost!")
-elif a==3:
-    if b==3:
-        print("Scissors!\n\n")
-        print("It's a Tie!")
-    elif b==2:
-        print("Paper!\n\n")
-        print("You Won!")
-    elif b==1:
-        print("Rock!\n\n")
-        print("You Lost!")
+    b=randint(1,3)
 
-input()
+    if a==1:
+        if b==1:
+            print("Rock!\n\n")
+            print("It's a Tie!")
+        elif b==3:
+            print("Paper!\n\n")
+            print("You Won!")
+        elif b==2:
+            print("Scissors!\n\n")
+            print("You Lost!")
+    elif a==2:
+        if b==2:
+            print("Paper!\n\n")
+            print("It's a Tie!")
+        elif b==1:
+            print("Rock!\n\n")
+            print("You Won!")
+        elif b==3:
+            print("Scissors!\n\n")
+            print("You Lost!")
+    elif a==3:
+        if b==3:
+            print("Scissors!\n\n")
+            print("It's a Tie!")
+        elif b==2:
+            print("Paper!\n\n")
+            print("You Won!")
+        elif b==1:
+            print("Rock!\n\n")
+            print("You Lost!")
+    print("Wanna play again? (Y/N)")
+    answer=input()
+    if answer=="n" or answer=="N":
+        break
