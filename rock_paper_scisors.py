@@ -1,13 +1,13 @@
 from random import randint
 
 print("----------")
-print("Welcome To Rock, Paper, Scisors!")
+print("Welcome To Rock, Paper, Scissors!")
 print("----------")
 
 print("Select one of three!")
 print("----------")
 
-print("1. Rock\n2. Paper\n3. Scisors")
+print("1. Rock\n2. Paper\n3. Scissors")
 print("----------")
 
 a=int(input())
@@ -26,7 +26,7 @@ if a==1:
         print("Paper!\n\n")
         print("You Won!")
     elif b==2:
-        print("Scisors!\n\n")
+        print("Scissors!\n\n")
         print("You Lost!")
 elif a==2:
     if b==2:
@@ -36,11 +36,11 @@ elif a==2:
         print("Rock!\n\n")
         print("You Won!")
     elif b==3:
-        print("Scisors!\n\n")
+        print("Scissors!\n\n")
         print("You Lost!")
 elif a==3:
     if b==3:
-        print("Scisors!\n\n")
+        print("Scissors!\n\n")
         print("It's a Tie!")
     elif b==2:
         print("Paper!\n\n")
