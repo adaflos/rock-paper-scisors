@@ -18,9 +18,9 @@ while answer=="Y" or answer=="y":
     if a!=1 and a!=2 and a!=3:
         tmp = sp.call('cls', shell=True)
         print("\n\n")
-        print("--------------------------------------------------")
+        print("-----------------------------------------------------")
         print("Wrong input. Please select an option between 1 and 3")
-        print("--------------------------------------------------\n\n\n")
+        print("-----------------------------------------------------\n\n\n")
         continue
 
     print("----------")
