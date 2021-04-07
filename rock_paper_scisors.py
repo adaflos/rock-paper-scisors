@@ -1,4 +1,5 @@
 from random import randint
+import subprocess as sp
 
 print("----------")
 print("Welcome To Rock, Paper, Scissors!")
@@ -15,6 +16,7 @@ while answer=="Y" or answer=="y":
 
     a=int(input())
     if a!=1 and a!=2 and a!=3:
+        tmp = sp.call('cls', shell=True)
         print("\n\n")
         print("----------")
         print("Wrong input. Please select an option between 1 and 3")
@@ -59,5 +61,6 @@ while answer=="Y" or answer=="y":
             print("You Lost!")
     print("Wanna play again? (Y/N)")
     answer=input()
+    tmp = sp.call('cls', shell=True)
     if answer=="n" or answer=="N":
         break
